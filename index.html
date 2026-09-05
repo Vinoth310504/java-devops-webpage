@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<meta name="description"
+      content="Professional Java DevOps project demonstrating GitHub, Jenkins, Maven, Spring Boot and Docker.">
+
+<title>Java DevOps | CI/CD Application</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet">
+```
+
+</head>
+
+<body>
+
+<!-- ================= NAVIGATION ================= -->
+
+<header class="navbar">
+
+```
+<div class="nav-container">
+
+    <a href="#home" class="logo">
+        <span>&lt;</span>Java<span>DevOps</span><span>/&gt;</span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#stack">Tech Stack</a>
+        <a href="#pipeline">Pipeline</a>
+        <a href="#architecture">Architecture</a>
+
+    </nav>
+
+    <a href="#pipeline" class="nav-button">
+        View Pipeline
+    </a>
+
+    <button class="menu-button"
+            id="menuButton"
+            aria-label="Open navigation">
+
+        ☰
+
+    </button>
+
+</div>
+```
+
+</header>
+
+<!-- ================= HERO ================= -->
+
+<main>
+
+<section class="hero" id="home">
+
+```
+<div class="hero-background"></div>
+
+<div class="hero-container">
+
+    <div class="hero-content">
+
+        <div class="status-badge">
+
+            <span class="pulse"></span>
+
+            DevOps Project • Production Ready
+
+        </div>
+
+
+        <h1>
+
+            Building Java Applications
+
+            <span>the DevOps Way.</span>
+
+        </h1>
+
+
+        <p class="hero-text">
+
+            A complete CI/CD demonstration combining Java,
+            Maven, Spring Boot, Jenkins, GitHub and Docker
+            into one automated deployment workflow.
+
+        </p>
+
+
+        <div class="hero-buttons">
+
+            <a href="#pipeline"
+               class="button primary">
+
+                Explore Pipeline
+                <span>→</span>
+
+            </a>
+
+            <a href="#architecture"
+               class="button secondary">
+
+                View Architecture
+
+            </a>
+
+        </div>
+
+
+        <div class="hero-stats">
+
+            <div>
+                <strong>5+</strong>
+                <span>DevOps Tools</span>
+            </div>
+
+            <div>
+                <strong>CI/CD</strong>
+                <span>Automation</span>
+            </div>
+
+            <div>
+                <strong>8080</strong>
+                <span>Application Port</span>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- TERMINAL -->
+
+    <div class="terminal-wrapper">
+
+        <div class="terminal-glow"></div>
+
+        <div class="terminal">
+
+            <div class="terminal-top">
+
+                <div class="terminal-dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <div class="terminal-title">
+                    devops@java-app:~
+                </div>
+
+            </div>
+
+
+            <div class="terminal-content">
+
+                <div>
+                    <span class="terminal-user">
+                        devops@java-app
+                    </span>
+                    <span>:</span>
+                    <span class="terminal-path">~$</span>
+
+                    <span class="command">
+                        mvn clean package
+                    </span>
+                </div>
+
+                <p class="terminal-success">
+                    ✓ BUILD SUCCESS
+                </p>
+
+
+                <div>
+                    <span class="terminal-user">
+                        devops@java-app
+                    </span>
+                    <span>:</span>
+                    <span class="terminal-path">~$</span>
+
+                    <span class="command">
+                        docker build -t java-devops-app .
+                    </span>
+                </div>
+
+                <p class="terminal-success">
+                    ✓ Docker image created
+                </p>
+
+
+                <div>
+                    <span class="terminal-user">
+                        devops@java-app
+                    </span>
+                    <span>:</span>
+                    <span class="terminal-path">~$</span>
+
+                    <span class="command">
+                        docker run -p 8080:8080
+                    </span>
+                </div>
+
+                <p class="terminal-success">
+                    ✓ Container started
+                </p>
+
+
+                <div>
+                    <span class="terminal-user">
+                        devops@java-app
+                    </span>
+                    <span>:</span>
+                    <span class="terminal-path">~$</span>
+
+                    <span class="cursor"></span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- ================= ABOUT ================= -->
+
+<section class="section" id="about">
+
+```
+<div class="section-heading">
+
+    <span class="eyebrow">
+        ABOUT THE PROJECT
+    </span>
+
+    <h2>
+        From source code to
+        <span>running container.</span>
+    </h2>
+
+    <p>
+        This project demonstrates how modern DevOps practices
+        automate the journey of a Java application from development
+        to deployment.
+    </p>
+
+</div>
+
+
+<div class="about-grid">
+
+    <div class="about-card large-card">
+
+        <div class="card-icon">
+            ☕
+        </div>
+
+        <h3>
+            Java Application
+        </h3>
+
+        <p>
+            The application is developed using Java and
+            Spring Boot, providing a reliable foundation
+            for a production-style web application.
+        </p>
+
+        <div class="card-line"></div>
+
+        <span class="card-label">
+            BACKEND APPLICATION
+        </span>
+
+    </div>
+
+
+    <div class="about-card">
+
+        <div class="card-icon">
+            ⚙
+        </div>
+
+        <h3>
+            Automated Builds
+        </h3>
+
+        <p>
+            Maven manages dependencies, compiles the source
+            code, runs tests and generates the executable JAR.
+        </p>
+
+    </div>
+
+
+    <div class="about-card">
+
+        <div class="card-icon">
+            ◈
+        </div>
+
+        <h3>
+            Containerization
+        </h3>
+
+        <p>
+            Docker packages the application and its runtime
+            environment into a portable container.
+        </p>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- ================= TECH STACK ================= -->
+
+<section class="section dark-section" id="stack">
+
+```
+<div class="section-heading">
+
+    <span class="eyebrow">
+        TECHNOLOGY STACK
+    </span>
+
+    <h2>
+        Tools behind the
+        <span>pipeline.</span>
+    </h2>
+
+    <p>
+        Each technology plays a specific role in the
+        application delivery lifecycle.
+    </p>
+
+</div>
+
+
+<div class="tech-grid">
+
+    <article class="tech-card">
+
+        <div class="tech-number">
+            01
+        </div>
+
+        <div class="tech-logo java">
+            ☕
+        </div>
+
+        <h3>Java</h3>
+
+        <p>
+            Application development and backend programming.
+        </p>
+
+        <span>LANGUAGE</span>
+
+    </article>
+
+
+    <article class="tech-card">
+
+        <div class="tech-number">
+            02
+        </div>
+
+        <div class="tech-logo maven">
+            M
+        </div>
+
+        <h3>Maven</h3>
+
+        <p>
+            Build automation and dependency management.
+        </p>
+
+        <span>BUILD TOOL</span>
+
+    </article>
+
+
+    <article class="tech-card">
+
+        <div class="tech-number">
+            03
+        </div>
+
+        <div class="tech-logo spring">
+            SB
+        </div>
+
+        <h3>Spring Boot</h3>
+
+        <p>
+            Java web application framework and embedded server.
+        </p>
+
+        <span>FRAMEWORK</span>
+
+    </article>
+
+
+    <article class="tech-card">
+
+        <div class="tech-number">
+            04
+        </div>
+
+        <div class="tech-logo jenkins">
+            J
+        </div>
+
+        <h3>Jenkins</h3>
+
+        <p>
+            Continuous integration and deployment automation.
+        </p>
+
+        <span>CI/CD</span>
+
+    </article>
+
+
+    <article class="tech-card">
+
+        <div class="tech-number">
+            05
+        </div>
+
+        <div class="tech-logo docker">
+            D
+        </div>
+
+        <h3>Docker</h3>
+
+        <p>
+            Containerization and application deployment.
+        </p>
+
+        <span>CONTAINER</span>
+
+    </article>
+
+
+    <article class="tech-card">
+
+        <div class="tech-number">
+            06
+        </div>
+
+        <div class="tech-logo github">
+            GH
+        </div>
+
+        <h3>GitHub</h3>
+
+        <p>
+            Source control and collaborative development.
+        </p>
+
+        <span>VERSION CONTROL</span>
+
+    </article>
+
+</div>
+```
+
+</section>
+
+<!-- ================= PIPELINE ================= -->
+
+<section class="section pipeline-section" id="pipeline">
+
+```
+<div class="section-heading">
+
+    <span class="eyebrow">
+        CI/CD PIPELINE
+    </span>
+
+    <h2>
+        Code to
+        <span>deployment.</span>
+    </h2>
+
+    <p>
+        A complete automated workflow for building,
+        packaging and running the Java application.
+    </p>
+
+</div>
+
+
+<div class="pipeline-container">
+
+    <div class="pipeline-line"></div>
+
+
+    <div class="pipeline-step">
+
+        <div class="pipeline-icon">
+            GH
+        </div>
+
+        <div class="pipeline-info">
+
+            <span>01</span>
+
+            <h3>GitHub</h3>
+
+            <p>
+                Developer pushes application source code
+                to the GitHub repository.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="pipeline-step">
+
+        <div class="pipeline-icon">
+            J
+        </div>
+
+        <div class="pipeline-info">
+
+            <span>02</span>
+
+            <h3>Jenkins</h3>
+
+            <p>
+                Jenkins detects the change and starts
+                the CI/CD pipeline.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="pipeline-step">
+
+        <div class="pipeline-icon">
+            M
+        </div>
+
+        <div class="pipeline-info">
+
+            <span>03</span>
+
+            <h3>Maven Build</h3>
+
+            <p>
+                Maven compiles the Java source, executes
+                tests and packages the application.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="pipeline-step">
+
+        <div class="pipeline-icon">
+            SB
+        </div>
+
+        <div class="pipeline-info">
+
+            <span>04</span>
+
+            <h3>Spring Boot</h3>
+
+            <p>
+                Spring Boot packages the web application
+                into an executable JAR.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="pipeline-step">
+
+        <div class="pipeline-icon">
+            JAR
+        </div>
+
+        <div class="pipeline-info">
+
+            <span>05</span>
+
+            <h3>Executable JAR</h3>
+
+            <p>
+                The application is packaged into a
+                deployable Java archive.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="pipeline-step">
+
+        <div class="pipeline-icon">
+            D
+        </div>
+
+        <div class="pipeline-info">
+
+            <span>06</span>
+
+            <h3>Docker Image</h3>
+
+            <p>
+                Docker creates a portable image containing
+                the application runtime.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="pipeline-step">
+
+        <div class="pipeline-icon">
+            DC
+        </div>
+
+        <div class="pipeline-info">
+
+            <span>07</span>
+
+            <h3>Docker Container</h3>
+
+            <p>
+                The image is launched as an isolated
+                running container.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="pipeline-step final">
+
+        <div class="pipeline-icon">
+            8080
+        </div>
+
+        <div class="pipeline-info">
+
+            <span>08</span>
+
+            <h3>Web Application</h3>
+
+            <p>
+                The application becomes accessible through
+                port 8080 in the browser.
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- ================= ARCHITECTURE ================= -->
+
+<section class="section dark-section" id="architecture">
+
+```
+<div class="section-heading">
+
+    <span class="eyebrow">
+        SYSTEM ARCHITECTURE
+    </span>
+
+    <h2>
+        How everything
+        <span>connects.</span>
+    </h2>
+
+</div>
+
+
+<div class="architecture">
+
+    <div class="architecture-box source">
+
+        <div class="architecture-symbol">
+            GH
+        </div>
+
+        <h3>GitHub</h3>
+
+        <p>Source Repository</p>
+
+    </div>
+
+
+    <div class="architecture-arrow">
+        →
+    </div>
+
+
+    <div class="architecture-box">
+
+        <div class="architecture-symbol">
+            J
+        </div>
+
+        <h3>Jenkins</h3>
+
+        <p>CI/CD Automation</p>
+
+    </div>
+
+
+    <div class="architecture-arrow">
+        →
+    </div>
+
+
+    <div class="architecture-box">
+
+        <div class="architecture-symbol">
+            M
+        </div>
+
+        <h3>Maven</h3>
+
+        <p>Build & Test</p>
+
+    </div>
+
+
+    <div class="architecture-arrow">
+        →
+    </div>
+
+
+    <div class="architecture-box">
+
+        <div class="architecture-symbol">
+            D
+        </div>
+
+        <h3>Docker</h3>
+
+        <p>Container Runtime</p>
+
+    </div>
+
+
+    <div class="architecture-arrow">
+        →
+    </div>
+
+
+    <div class="architecture-box final-box">
+
+        <div class="architecture-symbol">
+            8080
+        </div>
+
+        <h3>Application</h3>
+
+        <p>Web Access</p>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- ================= DEPLOYMENT STATUS ================= -->
+
+<section class="section deployment-section">
+
+```
+<div class="deployment-card">
+
+    <div>
+
+        <span class="eyebrow">
+            DEPLOYMENT STATUS
+        </span>
+
+        <h2>
+            Application is
+            <span>ready.</span>
+        </h2>
+
+        <p>
+            Once deployed through Docker, the Spring Boot
+            application will be available on port 8080.
+        </p>
+
+    </div>
+
+
+    <div class="deployment-status">
+
+        <div class="status-circle">
+
+            <span></span>
+
+        </div>
+
+        <div>
+
+            <strong>READY</strong>
+
+            <p>
+                Port 8080
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+```
+<div class="footer-container">
+
+    <div class="footer-brand">
+
+        <div class="logo">
+            <span>&lt;</span>Java<span>DevOps</span><span>/&gt;</span>
+        </div>
+
+        <p>
+            Building, automating and deploying Java
+            applications with modern DevOps practices.
+        </p>
+
+    </div>
+
+
+    <div class="footer-links">
+
+        <h4>PROJECT</h4>
+
+        <a href="#about">About</a>
+        <a href="#stack">Technology Stack</a>
+        <a href="#pipeline">CI/CD Pipeline</a>
+        <a href="#architecture">Architecture</a>
+
+    </div>
+
+
+    <div class="footer-links">
+
+        <h4>TOOLS</h4>
+
+        <span>Java</span>
+        <span>Maven</span>
+        <span>Spring Boot</span>
+        <span>Jenkins</span>
+        <span>Docker</span>
+
+    </div>
+
+</div>
+
+
+<div class="footer-bottom">
+
+    <p>
+        © 2026 Java DevOps Project
+    </p>
+
+    <p>
+        Built for DevOps learning & practice
+    </p>
+
+</div>
+```
+
+</footer>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
